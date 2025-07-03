@@ -14,8 +14,9 @@ Built with JavaScript, HTML, and CSS.
 
 ## Demo
 
-![Screenshot](screenshot.png)  
-*Replace with an actual screenshot of your app UI.*
+https://svetlana2006.github.io/SplitBill/
+
+The app is ready to use on the above link.
 
 ## Getting Started
 
