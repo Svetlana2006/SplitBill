@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split The Bill - Add Trip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="tripTitle">Add New Trip</h1>
+        
+        <div class="form-group">
+            <label for="tripName">Trip Name:</label>
+            <input type="text" id="tripName" placeholder="e.g., Summer Vacation 2023">
+        </div>
+        
+        <div class="form-group">
+            <label>Friends:</label>
+            <div id="friendsList">
+                <input type="text" class="friend-name" placeholder="Friend name">
+            </div>
+            <button id="addFriendBtn" class="btn-small">+ Add Friend</button>
+        </div>
+        
+        <h2>Expenses</h2>
+        <div id="expensesContainer">
+            <div class="expense-item">
+                <select class="expense-payer">
+                    <option value="">Who paid?</option>
+                </select>
+                <input type="number" class="expense-amount" placeholder="Amount">
+                <input type="text" class="expense-desc" placeholder="What for?">
+                <label class="settled-check">
+                    <input type="checkbox" class="expense-settled"> Settled?
+                </label>
+                <button class="btn-small remove-expense">×</button>
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button id="addExpenseBtn" class="btn">+ Add Expense</button>
+            <button id="finishListBtn" class="btn">Finish List</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

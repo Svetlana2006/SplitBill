@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 40px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-small {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #2980b9;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Trip List Styles */
+.trips-list {
+    margin-top: 20px;
+}
+
+.trip-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #3498db;
+}
+
+.trip-item h3 {
+    margin: 0;
+}
+
+.trip-actions {
+    margin-bottom: 20px;
+}
+
+/* Expense Item Styles */
+.expense-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.expense-item select, 
+.expense-item input[type="number"],
+.expense-item input[type="text"] {
+    flex: 1;
+    min-width: 120px;
+}
+
+.expense-settled {
+    margin-right: 5px;
+}
+
+.settled-check {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.remove-expense {
+    background-color: #e74c3c;
+}
+
+.remove-expense:hover {
+    background-color: #c0392b;
+}
+
+/* Calculation Styles */
+.balance-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.positive {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.negative {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.neutral {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+.settlement-step {
+    padding: 10px;
+    background-color: #fff3cd;
+    color: #856404;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin-top: 10px;
+    }
+    
+    .expense-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
